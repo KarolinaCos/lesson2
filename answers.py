@@ -10,13 +10,13 @@ def get_answer(question, answers):
     return answers.get(question)
 
 def user_question(answers): 
-        while True:
+    while True:
         new_question = input("Ask me something ")
         answer = get_answer(new_question, answers)
         print(answer)
 
-    if new_question == "Bye":
-        break
+        if new_question == "Bye":
+            break
 
 if __name__ == "__main__":
     get_answer
